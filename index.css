@@ -1,0 +1,50 @@
+.sm-icons{
+    flex-direction: row;
+} 
+.sm-icons i{
+    padding-right: 0.5rem;
+    font-size: 200%;
+}
+.navbar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+.logo{
+    transform: scale(2);
+}
+#carouselExampleIndicators .carousel-item{
+    max-height: 350px;
+    background-image: url(img1.jpg), url(img2.jpg), url(img3.jpg), url(img4.jpg);
+    background-position: center;
+}
+#carouselExampleIndicators{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#carouselExampleIndicators .carousel-control-prev{
+    padding-left: 12%;
+}
+#carouselExampleIndicators .carousel-control-next{
+    padding-right: 12%;
+}
+#foto{
+    align-items: center;
+    padding-left: 10%;
+    margin-top: 3%;
+}
+#foto img{
+    border-radius: 50%;
+}
+#texto{
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 3%;
+}
+#texto p{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+#titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1% black;
+}
