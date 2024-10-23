@@ -1,50 +1,121 @@
-.sm-icons{
+.sm-icons {
     flex-direction: row;
-} 
-.sm-icons i{
+}
+
+.sm-icons i {
     padding-right: 0.5rem;
     font-size: 200%;
 }
-.navbar{
+
+.navbar {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
 }
-.logo{
+
+.logo {
     transform: scale(2);
 }
-#carouselExampleIndicators .carousel-item{
-    max-height: 350px;
-    background-image: url(img1.jpg), url(img2.jpg), url(img3.jpg), url(img4.jpg);
-    background-position: center;
-}
-#carouselExampleIndicators{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-#carouselExampleIndicators .carousel-control-prev{
-    padding-left: 12%;
-}
-#carouselExampleIndicators .carousel-control-next{
-    padding-right: 12%;
-}
-#foto{
+
+#foto {
     align-items: center;
     padding-left: 10%;
     margin-top: 3%;
 }
-#foto img{
+
+#foto img {
     border-radius: 50%;
 }
-#texto{
+
+#texto {
     padding-right: 10%;
     padding-left: 10%;
     margin-top: 3%;
 }
-#texto p{
-    font-family:Arial, Helvetica, sans-serif;
+
+#texto p {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
-#titulo{
+
+#titulo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 1% black;
+}
+
+
+
+
+
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            /* Color negro fuerte al fondo */
+            rgba(0, 0, 0, 0.8) 20%,
+            /* Negro fuerte hasta más arriba */
+            rgba(0, 0, 0, 0.6) 50%,
+            /* Negro moderado en la mitad */
+            rgba(0, 0, 0, 0.4) 75%,
+            /* Transparencia suave */
+            rgba(0, 0, 0, 0.2) 90%,
+            /* Más claridad hacia arriba */
+            rgba(0, 0, 0, 0.1) 100%
+            /* Casi transparente en la parte superior */
+        );
+
+    z-index: 2;
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    z-index: 1;
+    /* Fondo detrás del contenido */
+}
+
+.swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.text-inicio {
+    z-index: 2;
+    /* El texto encima del slider */
+    text-align: center;
+    padding: 0 15px;
+    /* Para un margen horizontal adecuado */
+}
+
+
+.btn-ini {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.btn-ini:hover {
+    background: #fff;
+    /* Mantiene el mismo color de fondo al hacer hover */
+    color: #000 !important;
+    /* Mantiene el color del texto al hacer hover */
+    transform: translateY(-5px);
 }
