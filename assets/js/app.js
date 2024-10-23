@@ -10,4 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
         effect: 'fade',
     });
 
+    var swiper = new Swiper(".rr", {
+        effect: "cards",
+        grabCursor: true,
+    });
+
 });
