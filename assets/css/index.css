@@ -7,28 +7,35 @@
     transform: scale(2);
 }
 
-#foto {
-    align-items: center;
-    padding-left: 10%;
-    margin-top: 3%;
+.cont-img {
+    text-align: center;
+    position: relative;
 }
-
-#foto img {
+.cont-img .leia {
+    max-width: 400px;
     border-radius: 50%;
 }
 
-#texto {
-    padding-right: 10%;
-    padding-left: 10%;
-    margin-top: 3%;
+#texto, #foto {
+    align-content: center;
 }
 
-#texto p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+
+
+@media screen and (max-width: 1080px) {
+    .cont-img .leia {
+        width: 45vw;
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cont-img .leia {
+        width: 100%;
+    }
 }
 
-#titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-bottom: 1% black;
+@media screen and (min-width: 1081px) {
+    .cont-img img {
+        width: 40vw;
+    }
 }
